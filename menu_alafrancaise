@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood!</title>
+</head>
+
+
+<body>
+
+    <!-------------------------HEADER--------------------------->
+
+    <header>
+        <p>ohmyfood</p>>
+    </header>
+
+    <!-------------------------MAIN--------------------------->
+    <main>
+     
+        <img src="" alt="">
+        <h1>A la française</h1>
+        <i></i>
+
+        <section>
+
+            <h2>ENTREES</h2>
+
+            <!--card entrées-->
+            <button>
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <!--"animation button?"--> 
+            </button>
+
+            <!--card entrées-->
+            <button>
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <!--"animation button?"--> 
+            </button>
+
+            <!--card entrées-->
+            <button>
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <!--"animation button?"--> 
+            </button>
+            
+        </section>
+
+        <button>Commander</button>
+
+        <section>
+
+            <h2>PLATS</h2>
+
+            <!--card plats-->
+            <button>
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <!--"animation button?"--> 
+            </button>
+
+            <!--card plats-->
+            <button>
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <!--"animation button?"--> 
+            </button>
+
+            <!--card plats-->
+            <button>
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <!--"animation button?"--> 
+            </button>
+            
+        </section>
+
+        <section>
+
+            <h2>DESSERTS</h2>
+
+            <!--card desserts-->
+            <button>
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <!--"animation button?"--> 
+            </button>
+
+            <!--card desserts-->
+            <button>
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <!--"animation button?"--> 
+            </button>
+
+            <!--card desserts-->
+            <button>
+                <h3></h3>
+                <p></p>
+                <p></p>
+                <!--"animation button?"--> 
+            </button>
+            
+        </section>
+    </main>
+
+
+
+
+
+    <!-------------------------FOOTER-------------------------->
+
+    <footer>
+        <ul>Ohmyfood
+            <li> <i></i> Proposer un restaurant</li>
+            <li> <i></i> Devenir partenaire</li>
+            <li>Mentions légales</li>
+            <li>Contact</li>
+        </ul>
+    </footer>
+</body>
+</html>
