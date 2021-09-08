@@ -1,0 +1,22 @@
+{
+  "name": "louislebail_3_19082021",
+  "version": "1.0.0",
+  "description": "LouisLebail_3_19082021",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l0u1s-s3nn1n/LouisLebail_3_19082021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/l0u1s-s3nn1n/LouisLebail_3_19082021/issues"
+  },
+  "homepage": "https://github.com/l0u1s-s3nn1n/LouisLebail_3_19082021#readme",
+  "dependencies": {
+    "sass": "^1.39.0"
+  }
+}
