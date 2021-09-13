@@ -4,7 +4,8 @@
   "description": "LouisLebail_3_19082021",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,11 +13,15 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/l0u1s-s3nn1n/LouisLebail_3_19082021/issues"
   },
   "homepage": "https://github.com/l0u1s-s3nn1n/LouisLebail_3_19082021#readme",
   "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
     "sass": "^1.39.0"
   }
 }
