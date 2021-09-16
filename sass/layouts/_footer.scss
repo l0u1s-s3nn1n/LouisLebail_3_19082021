@@ -1,0 +1,43 @@
+/*FOOTER*/
+footer{
+    color: white;
+    background-color: $clr-footer-background;
+    padding: 20px;
+    margin: 0px -20px;
+    @media screen and (max-width: $size-tablet){
+        margin: 0px;
+    }
+
+    .footer__h3{
+        font-weight: 500;
+        margin-top: 0px;
+        text-align: center;
+        font-size: 1.5rem;
+        @media screen and (max-width: $size-mobile){
+         text-align: left; 
+         font-size: 1.2rem;  
+        }
+    }
+
+    ul{
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-around;
+        align-items: stretch;
+        @media screen and (max-width: $size-mobile){
+        flex-direction: column;
+        }
+    }
+    
+    li{
+        margin-bottom: 10px;
+        .icon{
+            width: 15px;
+            margin-right: 8px;
+            font-size: 12px;
+        }
+        a {
+            color: white;
+        }
+    }
+}
