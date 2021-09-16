@@ -1,0 +1,15 @@
+/*BUTTONS*/
+.explorerbloc__button{
+    text-align: center;
+}
+
+.explorerbloc__button--link{
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    @include explorer-background-gradient;
+    margin: 0;
+    padding: 15px;
+}

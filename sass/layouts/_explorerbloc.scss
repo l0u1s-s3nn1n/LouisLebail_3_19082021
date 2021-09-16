@@ -1,0 +1,25 @@
+.explorerbloc {
+    background-color: $clr-explorer-background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px -20px;
+}
+
+.locationbloc {
+    width: 100%;
+    background-color: $clr-location-background;
+}
+
+.formexplorer_input{
+    width: 100%;
+    text-align: center;
+    background-color: $clr-location-background;
+    border: 0px;
+    width: 100%;
+    font-weight: 600;
+    color: black;
+    font-size: 1rem;
+}
+
+
