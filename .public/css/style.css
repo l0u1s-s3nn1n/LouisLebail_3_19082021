@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 body, html {
+  margin: 0px;
   font-family: "Roboto", sans-serif;
-  height: 100vh;
-  margin: 0px auto;
   position: relative;
 }
 
@@ -33,8 +32,130 @@ img {
   display: block;
 }
 
+/*EXLORER BUTTON GRADIENT*/
+/*FUNCTIONNING BUTTTON*/
+/*FUNCTIONNING ICON PROPERTY */
+/*RESTAURANTS CARDS*/
+/*HOME*/
+/*HEADER*/
+header .header__logo {
+  padding-block: 50px;
+}
+@media screen and (max-width: 650px) {
+  header .header__logo {
+    padding-block: 20px;
+  }
+}
+header img {
+  height: 50px;
+  margin: auto;
+}
+@media screen and (max-width: 650px) {
+  header img {
+    height: 30px;
+  }
+}
+
+.explorerbloc {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.locationbloc {
+  width: 100%;
+  background-color: #EAEAEA;
+}
+
+.explorerbloc__h2 {
+  align-items: center;
+  text-align: center;
+}
+
+.explorerbloc__description {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.formexplorer_input {
+  width: 100%;
+  text-align: center;
+  background-color: #EAEAEA;
+  border: 0px;
+  width: 100%;
+  font-weight: 600;
+  color: black;
+  font-size: 1rem;
+}
+
+.functioningbloc {
+  padding: 20px;
+}
+
+.functionnin_h2 {
+  background-color: salmon;
+}
+
+.restaurantsbloc {
+  padding: 20px;
+  background-color: #F6F6F6;
+}
+
+.restaurantsbloc__title {
+  width: 100%;
+}
+
+.restaurantscard {
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 0px 8px #a5a5a5;
+  border-radius: 20px;
+  margin: 20px 0px 20px 0px;
+}
+
+.card__image {
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 335px;
+  height: 215px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.card__button--new {
+  border-radius: 2px;
+  padding: 5px;
+  color: #009F88;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.card__infobloc {
+  color: black;
+  padding: 10px;
+}
+
+.card__infobloc--h3 {
+  padding: 0px 10px 5px 10px;
+  margin: 0px;
+}
+
+.card_infobloc--place {
+  padding: 0px 10px 10px 10px;
+}
+
 /*FOOTER*/
 footer {
+  width: 100%;
   color: white;
   background-color: #353535;
   padding: 20px;
@@ -80,51 +201,12 @@ footer li a {
   color: white;
 }
 
-/*HOME*/
-/*HEADER*/
-header .header__logo {
-  padding-block: 50px;
-}
-@media screen and (max-width: 650px) {
-  header .header__logo {
-    padding-block: 20px;
-  }
-}
-header img {
-  height: 50px;
-  margin: auto;
-}
-@media screen and (max-width: 650px) {
-  header img {
-    height: 30px;
-  }
-}
-
-.explorerbloc {
-  background-color: #F6F6F6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0px -20px;
-}
-
-.locationbloc {
-  width: 100%;
-  background-color: #EAEAEA;
-}
-
-.formexplorer_input {
-  width: 100%;
-  text-align: center;
-  background-color: #EAEAEA;
-  border: 0px;
-  width: 100%;
-  font-weight: 600;
-  color: black;
-  font-size: 1rem;
-}
-
+/*EXLORER BUTTON GRADIENT*/
+/*FUNCTIONNING BUTTTON*/
+/*FUNCTIONNING ICON PROPERTY */
+/*RESTAURANTS CARDS*/
 /*BUTTONS*/
+/*BUTTONS EXPLORER*/
 .explorerbloc__button {
   text-align: center;
 }
@@ -138,6 +220,41 @@ header img {
   background: linear-gradient(#FF79DA, #9356DC);
   margin: 0;
   padding: 15px;
+}
+
+/*FUNCTIONNING BUTTON*/
+.functioning__button {
+  background-color: #F6F6F6;
+  box-shadow: 0px 2px 5px #a5a5a5;
+  border-radius: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.functioning__button .functioning__button--number {
+  width: 25px;
+  height: 25px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.functioning__button .functioning__element--icon {
+  color: #7e7e7e;
+  display: flex;
+  text-align: center;
+  justify-content: end;
+  margin: 0px 50px 0px 15px;
+}
+.functioning__button .functioning__element--iconpurple {
+  color: #9356DC;
+  display: flex;
+  text-align: center;
+  justify-content: end;
+  margin: 0px 50px 0px 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

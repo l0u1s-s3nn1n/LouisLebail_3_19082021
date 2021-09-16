@@ -1,4 +1,6 @@
 /*BUTTONS*/
+
+/*BUTTONS EXPLORER*/
 .explorerbloc__button{
     text-align: center;
 }
@@ -12,4 +14,30 @@
     @include explorer-background-gradient;
     margin: 0;
     padding: 15px;
+}
+
+/*FUNCTIONNING BUTTON*/
+.functioning__button{
+    background-color: $clr-explorer-background;
+    box-shadow: 0px 2px 5px $clr-box-shadow;
+    border-radius: 20px;
+    @include center;
+    padding: 15px;
+
+    .functioning__button--number{
+        width: 25px;
+        height: 25px;
+        background-color: $clr-primary;
+        color: white;
+        border-radius: 50px;
+        @include center;
+    }
+    .functioning__element--icon {
+        color: $clr-icon;
+        @include icon_property;
+    }
+    .functioning__element--iconpurple {
+       color: $clr-icon--special;
+       @include icon_property;
+   }
 }

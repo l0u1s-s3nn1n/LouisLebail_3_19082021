@@ -1,10 +1,12 @@
 
 @import "utils/variables";
 @import "base/base";
-@import "layouts/footer";
+@import "utils/mixin";
 @import "layouts/header";
 @import "layouts/explorerbloc";
 @import "layouts/functionningbloc";
+@import "layouts/restaurantsbloc";
+@import "layouts/footer";
 @import "utils/mixin";
 @import "components/buttons";
 

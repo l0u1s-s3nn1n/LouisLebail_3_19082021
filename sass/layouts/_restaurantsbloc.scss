@@ -1,0 +1,50 @@
+.restaurantsbloc{
+    padding: 20px;
+    background-color: $clr-explorer-background;
+}
+
+.restaurantsbloc__title{
+    width: 100%;
+}
+
+.restaurantscard{
+    position: relative;
+   background-color: white;
+   box-shadow: 0px 0px 8px $clr-box-shadow;
+   @include borderradius20px;
+    margin: 20px 0px 20px 0px;
+}
+
+.card__image{
+    @include borderradius20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 335px;
+    height: 215px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.card__button--new{
+    border-radius: 2px;
+    padding: 5px;
+    color: $clr-new-button;
+    background-color: $clr-new-button-police;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.card__infobloc{
+    color: black;
+  padding: 10px;
+}
+
+.card__infobloc--h3{
+    padding: 0px 10px 5px 10px;
+    margin: 0px;
+}
+
+.card_infobloc--place{
+    padding: 0px 10px 10px 10px;
+}
