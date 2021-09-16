@@ -1,25 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 5 | @import "components/components";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   sass/main.scss 5:9  root stylesheet */
 
-body, html {
-  font-family: "Roboto", sans-serif;
-  height: 100vh;
-  margin: 0px auto;
-  position: relative;
-  background-color: white;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @import \"components/components\";\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass/main.scss 5:9  root stylesheet";
 }
-
-body {
-  font-family: "Roboto", sans-serif;
-  height: 100vh;
-  margin: 0px auto;
-  position: relative;
-  background-color: white;
-}
-
-.rest_card_img {
-  width: 200px;
-  height: 200px;
-}
-
-/*# sourceMappingURL=style.css.map */

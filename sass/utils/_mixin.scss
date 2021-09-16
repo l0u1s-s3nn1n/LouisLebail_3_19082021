@@ -1,0 +1,14 @@
+@mixin display-flex ($flow: nowrap row, $justify: stretch, $align: stretch) {
+    display: flex;
+    flex-flow: $flow;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin bg-gradient-second-prim{
+    background: linear-gradient($clr-secondary, $clr-primary);
+}
+
+@mixin bg-gradient-second-prim-modif{
+    background: linear-gradient(90deg, #b579ff, #FF79DA);
+}

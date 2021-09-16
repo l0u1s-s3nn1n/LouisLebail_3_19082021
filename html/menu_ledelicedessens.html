@@ -1,133 +1,169 @@
+<!--META-->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohmyfood!</title>
+    <script src="https://kit.fontawesome.com/bdd1044ed8.js" crossorigin="anonymous"></script>
+    <link href="../.public/css/style.css" rel="stylesheet"/>
+    <title>Ohmyfood! Le délice des sens</title>
 </head>
 
+<!--BODY-->
+<body class="restaurant-body">
 
-<body>
-
-    <!-------------------------HEADER--------------------------->
-
-    <header>
-        <img class="header_img" src="/Images/logo/ohmyfood.png" alt="logo ohmyfood">
+    <!--HEADER-->
+    <header class="restaurant__page-header">
+        <a class="restaurant__page-header__icon-link" href="../index.html">
+            <i class="restaurant__page-header__icon fas fa-arrow-left"></i>
+        </a>
+        <div class="header__logo header__restaurantpage-logo">
+            <img src="../images/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
+        </div>
     </header>
 
-    <!-------------------------MAIN--------------------------->
-    <main>
-     
-        <img src="/Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat">
-        <h1>Le délice des sens</h1>
-        <i></i>
+    <!--IMAGE-->
+    <div class="restaurant__pages-img__div">
+        <img class="restaurant__pages-img" src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat">
+    </div>
 
-        <section>
+    <section class="restaurant__pages-sectionbloc">
 
-            <h2>ENTREES</h2>
+        <!--MENU TITLE-->
+        <h2 class="restaurant__pages-menutitle menutitle-anim1 menutitle-anim2">Le délice des sens
+            <span class="card_infobloc--heartbloc">
+                <i class="heart-icon icon-empty far fa-heart"></i>
+                <i class="heart-icon icon-full fas fa-heart"></i>
+            </span>
+        </h2>
 
-            <!--card entrées-->
-            <button>
-                <h3>Tartare de thon</h3>
-                <p>Assaisonné au yuzu</p>
-                <p>25€</p>
-                <!--"animation button?"--> 
-            </button>
+        <!--STARTER-->
+        <article class="restaurant__pages-card">
+            <h3 class="card__title card-anim card-anim__anim2">Entrées</h3>
 
-            <!--card entrées-->
-            <button>
-                <h3>Bouchée de homard croustillant</h3>
-                <p>Et sa farandole de petits légumes</p>
-                <p>35€</p>
-                <!--"animation button?"--> 
-            </button>
+            <section class="card__infosection  card-anim__anim3">
+                <a class="card__infosection-linkbloc" href="">
+                    <h4 class="card__infosection-dishes__name">Tartare de thon</h4>
+                    <span class="card__infosection-dishes__info">Assaisonné au yuzu</span>
+                    <strong class="menu__item--price">25€</strong>
+                    <div class="card__infosection-dishes_icondiv">
+                        <i class="card__infosection-dishes_checkicon fas fa-check-circle"></i>
+                    </div>
+                </a>
+            </section>
 
-            <!--card entrées-->
-            <button>
-                <h3>Velouté de cèpes</h3>
-                <p>Aux truffes</p>
-                <p>20€</p>
-                <!--"animation button?"--> 
-            </button>
             
-        </section>
+            <section class="card__infosection  card-anim__anim4">
+                <a class="card__infosection-linkbloc" href="">
+                    <h4 class="card__infosection-dishes__name">Bouchée de homard croustillant</h4>
+                    <span class="card__infosection-dishes__info">Et sa farandole de petits légumes</span>
+                    <strong class="menu__item--price">35€</strong>
+                    <div class="card__infosection-dishes_icondiv">
+                        <i class="card__infosection-dishes_checkicon fas fa-check-circle"></i>
+                    </div>
+                </a>
+            </section>
 
-        <button>Commander</button>
+            <section class="card__infosection  card-anim__anim5">
+                <a class="card__infosection-linkbloc" href="">
+                    <h4 class="card__infosection-dishes__name">Velouté de cèpes</h4>
+                    <span class="card__infosection-dishes__info">Aux truffes</span>
+                    <strong class="menu__item--price">20€</strong>
+                    <div class="card__infosection-dishes_icondiv">
+                        <i class="card__infosection-dishes_checkicon fas fa-check-circle"></i>
+                    </div>
+                </a>
+            </section>
+        </article>
 
-        <section>
+         <!--MAIN COURSE-->
+        <article class="restaurant__pages-card">
+            <h3 class="card__title card-anim card-anim__anim6">Plats</h3>
 
-            <h2>PLATS</h2>
-
-            <!--card plats-->
-            <button>
-                <h3>Poulet rôti aux herbes de Provence </h3>
-                <p>Et sa crème de truffe</p>
-                <p>40€</p>
-                <!--"animation button?"--> 
-            </button>
-
-            <!--card plats-->
-            <button>
-                <h3>Langouste rôtie </h3>
-                <p>Et ses légumes de saison</p>
-                <p>35€</p>
-                <!--"animation button?"--> 
-            </button>
-
-            <!--card plats-->
-            <button>
-                <h3>Côte de boeuf Angus </h3>
-                <p>Et sa purée de panais</p>
-                <p>44€</p>
-                <!--"animation button?"--> 
-            </button>
-            
-        </section>
-
-        <section>
-
-            <h2>DESSERTS</h2>
-
-            <!--card desserts-->
-            <button>
-                <h3>Desserts</h3>
-                <p>Farandole de desserts Du chef</p>
-                <p>18€</p>
-                <!--"animation button?"--> 
-            </button>
-
-            <!--card desserts-->
-            <button>
-                <h3>Crème brulée </h3>
-                <p>Revisitée</p>
-                <p>22€</p>
-                <!--"animation button?"--> 
-            </button>
-
-            <!--card desserts-->
-            <button>
-                <h3>Tiramisu</h3>
-                <p>À la noisette</p>
-                <p>23€</p>
-                <!--"animation button?"--> 
-            </button>
-            
-        </section>
-    </main>
+            <section class="card__infosection  card-anim__anim7">
+                <a class="card__infosection-linkbloc" href="">
+                    <h4 class="card__infosection-dishes__name">Poulet rôti aux herbes de Provence</h4>
+                    <span class="card__infosection-dishes__info">Et sa crème de truffe</span>
+                    <strong class="menu__item--price">40€</strong>
+                    <div class="card__infosection-dishes_icondiv">
+                        <i class="card__infosection-dishes_checkicon fas fa-check-circle"></i>
+                    </div>
+                </a>
+            </section>
 
 
+            <section class="card__infosection  card-anim__anim8">
+                <a class="card__infosection-linkbloc" href="">
+                    <h4 class="card__infosection-dishes__name">Langouste rôtie</h4>
+                    <span class="card__infosection-dishes__info">Et ses légumes de saison</span>
+                    <strong class="menu__item--price">35€</strong>
+                    <div class="card__infosection-dishes_icondiv">
+                        <i class="card__infosection-dishes_checkicon fas fa-check-circle"></i>
+                    </div>
+                </a>
+            </section>
 
+            <section class="card__infosection  card-anim__anim9">
+                <a class="card__infosection-linkbloc" href="">
+                    <h4 class="card__infosection-dishes__name">Côte de boeuf Angus</h4>
+                    <span class="card__infosection-dishes__info">Et sa purée de panais</span>
+                    <strong class="menu__item--price">44€</strong>
+                    <div class="card__infosection-dishes_icondiv">
+                        <i class="card__infosection-dishes_checkicon fas fa-check-circle"></i>
+                    </div>
+                </a>
+            </section>
+        </article>
 
+        <!--DESSERT-->
+        <article class="restaurant__pages-card">
+            <h3 class="card__title card-anim card-anim__anim10">Desserts</h3>
 
-    <!-------------------------FOOTER-------------------------->
+            <section class="card__infosection  card-anim__anim11">
+                    <a class="card__infosection-linkbloc" href="">
+                    <h4 class="card__infosection-dishes__name">Farandole de desserts</h4>
+                    <span class="card__infosection-dishes__info">Du chef</span>
+                    <strong class="menu__item--price">18€</strong>
+                    <div class="card__infosection-dishes_icondiv">
+                        <i class="card__infosection-dishes_checkicon fas fa-check-circle"></i>
+                    </div>
+                </a>
+            </section>
 
-    <footer>
-        <ul>Ohmyfood
-            <li> <i></i> Proposer un restaurant</li>
-            <li> <i></i> Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
+            <section class="card__infosection  card-anim__anim12">
+                <a class="card__infosection-linkbloc" href="">
+                    <h4 class="card__infosection-dishes__name">Crème brulée</h4>
+                    <span class="card__infosection-dishes__info">Revisitée</span>
+                    <strong class="menu__item--price">22€</strong>
+                    <div class="card__infosection-dishes_icondiv">
+                        <i class="card__infosection-dishes_checkicon fas fa-check-circle"></i>
+                    </div>
+                    </a>
+            </section>
+
+            <section class="card__infosection  card-anim__anim13">
+                <a class="card__infosection-linkbloc" href="">
+                    <h4 class="card__infosection-dishes__name">Tiramisu</h4>
+                    <span class="card__infosection-dishes__info">À la noisette</span>
+                    <strong class="menu__item--price">23€</strong>
+                    <div class="card__infosection-dishes_icondiv">
+                        <i class="card__infosection-dishes_checkicon fas fa-check-circle"></i>
+                    </div>
+                </a>
+            </section>
+        </article>
+        <h3 class="order__button order__button-anim card-anim__anim-btn"><a class="menu__order-button--link" href="#/">Commander</a></h3>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="menu__footer menu__footer-anim">
+        <h3 class="footer__title">ohmyfood</h3>
+        <ul>
+            <li><i class="icon fas fa-utensils"></i><a href="#/"><span>Proposer un restaurant</span></a></li>
+            <li><i class="icon fas fa-hands-helping"></i><a href="#/"><span>Devenir Partenaire</span></a></li>
+            <li><a href="#/"><span>Mentions légales</span></a></li>
+            <li><a href="mailto:contact@ohmyfood.com"><span>Contact</span></a></li>
         </ul>
     </footer>
 </body>
