@@ -13,13 +13,17 @@
    box-shadow: 0px 0px 8px $clr-box-shadow;
    @include borderradius20px;
     margin: 20px 0px 20px 0px;
+    :hover{
+        transform: scale(1.15%)
+    }
 }
+
 
 .card__image{
     @include borderradius20px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    width: 335px;
+    width: 100%;
     height: 215px;
     margin-bottom: 10px;
     object-fit: cover;
@@ -38,6 +42,12 @@
 .card__infobloc{
     color: black;
   padding: 10px;
+  @media (min-width:767px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+  }
 }
 
 .card__infobloc--h3{

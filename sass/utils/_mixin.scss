@@ -22,3 +22,10 @@
 @mixin borderradius20px {
     border-radius:20px;
 }
+
+/*BRIGHT BUTTON*/
+@mixin brightbutton {&:hover {
+    filter: brightness(110%);
+    box-shadow: 5px 10px 10px $clr-box-shadow;
+}
+}
