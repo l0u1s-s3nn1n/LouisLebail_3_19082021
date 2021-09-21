@@ -3,24 +3,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 0px 30px 0px;
 }
 
+
 .locationbloc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background-color: $clr-location-background;
+    color: black;
 }
 .explorerbloc__h2{
+    padding: 20px;
+    margin: 0px;
     align-items: center;
     text-align: center;
 }
 .explorerbloc__description{
     display: flex;
     flex-wrap: nowrap;
-    margin: 20px;
+    margin: 10px;
     padding: 20px;
     align-items: center;
     text-align: center;
-    width: 100%;
+}
+
+
+.formexplorer{
+    color: black;
+    display: flex;
+    padding: 15px 0px 15px 0px;
 }
 
 .formexplorer_input{
@@ -32,4 +46,12 @@
     font-weight: 600;
     color: black;
     font-size: 1rem;
+}
+
+::placeholder {
+    color: black;
+}
+
+.search {
+    color: black;
 }

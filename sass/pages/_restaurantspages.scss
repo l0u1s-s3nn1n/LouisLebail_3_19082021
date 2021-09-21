@@ -1,0 +1,95 @@
+
+.restaurants__page-body{
+  margin: 0px;
+}
+/*HEADER*/
+
+.restaurant__page-header{
+    width: 100%;
+    @include center
+}
+
+.restaurant__page-header__icon-link{
+    position: absolute;
+    padding: 0px;
+    margin: 0;
+    left: 40px;
+}
+    
+.restaurant__page-header__icon{
+    font-size: 1.4rem;
+    color: black;
+    padding: 0px;
+    margin: 0;
+}
+
+.header__restaurantpage-logo{
+    padding: 20px;
+}
+
+/*IMAGE*/
+.restaurant__pages-img__div{
+   height: 300px;
+   overflow: hidden;
+}
+
+.restaurant__pages-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/*MENUBLOC*/
+
+.restaurant__pages-sectionbloc{    
+    background-color:$clr-primary-background;
+    color: black;
+    border-radius: 50px 50px 0x 0px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+ }
+
+.restaurant__pages-menutitle{
+    padding: 20px;
+    font-family: "Shrikhand";
+    border-radius: 200px 200px 0x 0px;
+}
+.card_infobloc--heartbloc{
+    .heart-icon icon-empty{}
+    .heart-icon icon-full{}
+}
+
+/*STARTER*/
+.restaurant__pages-card{
+    padding: 20px;
+  
+}
+
+.card__title{
+        text-transform: uppercase;
+    }
+.card__infosection{
+    text-align: inherit;
+    align-items: flex-end;
+    height: 75px;
+    background-color: $clr-explorer-background;
+    box-shadow: 0px 2px 5px $clr-box-shadow;
+    border-radius: 20px;
+    padding: 0px 10px 0px 10px;
+    margin: 10px 0px 10px 0px;
+    }
+.card__infosection-linkbloc{
+        width: 100%;      
+        height: 100%;
+    }
+.card__infosection-dishes__name{}
+    .card__infosection-linkbloc{
+        color:black;
+    }
+.card__infosection-dishes__info{}
+.card__infosection-dishes_icondiv{
+    display: none;
+}
+    
+    
