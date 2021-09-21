@@ -30,14 +30,13 @@
 /*IMAGE*/
 .restaurant__pages-img__div{
     width: 100%;
-    height: 300px;
    overflow: hidden;
 }
 
 .restaurant__pages-img {
     object-fit: cover;
     width: 100%;
-    height: 350px;
+    height: 250px;
     overflow: hidden;
 }
 
@@ -50,7 +49,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: -50px;
+    top: -55px;
     width: 100%;
  }
 
