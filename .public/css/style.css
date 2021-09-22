@@ -42,7 +42,7 @@ img {
 header .header__logo {
   padding-block: 50px;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
   header .header__logo {
     padding-block: 20px;
   }
@@ -51,7 +51,7 @@ header img {
   height: 50px;
   margin: auto;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
   header img {
     height: 30px;
   }
@@ -134,9 +134,12 @@ header img {
   box-shadow: 0px 0px 8px #a5a5a5;
   border-radius: 20px;
   margin: 20px 0px 20px 0px;
+  transform: scale(1);
+  transition: transform 400ms linear;
 }
-.restaurantscard :hover {
-  transform: scale(1.15%);
+.restaurantscard:hover {
+  transform: scale(1.05);
+  filter: brightness(110%);
 }
 
 .card__image {
@@ -199,7 +202,7 @@ footer .footer__h3 {
   text-align: center;
   font-size: 1.5rem;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
   footer .footer__h3 {
     text-align: left;
     font-size: 1.2rem;
@@ -211,13 +214,19 @@ footer ul {
   justify-content: space-around;
   align-items: stretch;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
   footer ul {
     flex-direction: column;
   }
 }
 footer li {
   margin-bottom: 10px;
+  transform: scale(1);
+  transition: transform 1.5s linear;
+}
+footer li:hover {
+  transform: scale(1.05);
+  filter: brightness(110%);
 }
 footer li .icon {
   width: 15px;
@@ -359,6 +368,32 @@ footer li a {
     border-radius: 100%;
 }
 */
+.card_infobloc--heartbloc {
+  height: 24px;
+  width: 30px;
+  transform: translateY(-50%);
+}
+.card_infobloc--heartbloc:hover .icon-full {
+  transform: scale(1);
+}
+.card_infobloc--heartbloc:hover .icon-empty {
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+.card_infobloc--heartbloc .heart-icon {
+  font-size: 1.5rem;
+}
+.card_infobloc--heartbloc .heart-icon:hover {
+  cursor: pointer;
+}
+.card_infobloc--heartbloc .icon-empty {
+  transition: all 200ms linear;
+}
+.card_infobloc--heartbloc .icon-full {
+  transition: 300ms ease-in-out;
+  font-size: 1.5rem;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
 .restaurants__page-body {
   margin: 0px;
 }

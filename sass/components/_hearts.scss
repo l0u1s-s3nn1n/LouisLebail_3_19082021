@@ -1,0 +1,33 @@
+.card_infobloc--heartbloc{ 
+    height: 24px;
+    width: 30px;
+    transform: translateY(-50%);
+
+    &:hover .icon-full{
+        transform: scale(1);
+    }
+
+    &:hover .icon-empty{
+        @include explorer-background-gradient;
+        
+    }
+
+    .heart-icon{
+        font-size: 1.5rem;
+
+      &:hover{
+          cursor: pointer;
+      }
+    }
+
+    .icon-empty{
+        transition: all 200ms linear;
+    }
+
+    .icon-full{
+        transition: 300ms ease-in-out;
+        font-size: 1.5rem;
+        @include explorer-background-gradient;
+    
+    }
+}

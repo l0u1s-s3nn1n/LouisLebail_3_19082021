@@ -31,11 +31,19 @@ footer{
     
     li{
         margin-bottom: 10px;
+        transform: scale(1);
+        transition: transform 1.5s linear;
+        &:hover {
+            transform: scale(1.05);
+            filter: brightness(110%);
+        }
+
         .icon{
             width: 15px;
             margin-right: 8px;
             font-size: 12px;
         }
+
         a {
             color: white;
         }
