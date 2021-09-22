@@ -119,6 +119,13 @@ header img {
   padding: 20px;
 }
 
+.mainbloc {
+  /*@media (min-width: 767px){
+      display: flex;
+      justify-content: start;
+  }*/
+}
+
 .restaurantsbloc {
   padding: 20px;
   background-color: #F6F6F6;
@@ -331,8 +338,7 @@ footer li a {
   box-shadow: 5px 10px 10px #a5a5a5;
 }
 
-/*
-@keyframes spin{
+/*@keyframes spin{
     0%{
         transform: rotate(0deg);
     }
