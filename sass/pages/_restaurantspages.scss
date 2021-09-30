@@ -1,4 +1,6 @@
 
+
+
 .restaurants__page-body{
   margin: 0px;
 }
@@ -57,10 +59,8 @@
     padding: 20px;
     font-family: "Shrikhand";
     border-radius: 50px;
-}
-.card_infobloc--heartbloc{
-    .heart-icon icon-empty{}
-    .heart-icon icon-full{}
+    display: flex;
+    justify-content: space-around;
 }
 
 /*STARTER*/
@@ -88,7 +88,6 @@
         height: 100%;
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         align-items: baseline;
         color:black;
     }
@@ -98,7 +97,16 @@
     
 }
 .card__infosection-dishes_icondiv{
-    display: none;
+    color: white;
+    font-size: x-large;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    border-radius: 0 25px 25px 0;
+    
 }
 
 .menu__item--price{

@@ -1,4 +1,8 @@
 .card_infobloc--heartbloc{ 
+    position: absolute;
+    right: 20px;
+    margin-top: 15px;
+    align-items: center;
     height: 24px;
     width: 30px;
     transform: translateY(-50%);
@@ -9,11 +13,16 @@
 
     &:hover .icon-empty{
         @include explorer-background-gradient;
-        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .heart-icon{
+        color: transparent;
+        position: absolute;
+        inset: 0px;
         font-size: 1.5rem;
+        text-align: center;
 
       &:hover{
           cursor: pointer;
@@ -22,12 +31,20 @@
 
     .icon-empty{
         transition: all 200ms linear;
+        z-index: 10;
+        background: black;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .icon-full{
         transition: 300ms ease-in-out;
         font-size: 1.5rem;
         @include explorer-background-gradient;
-    
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform-origin: bottom;
+        transform: scale(0);
+        z-index: 1;
     }
 }
