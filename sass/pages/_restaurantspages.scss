@@ -1,14 +1,42 @@
 
+/*ANIMATION MENU*/
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
 
-.restaurants__page-body{
-  margin: 0px;
+
+.starterfade {
+    animation: fadeIn linear 1s;
+
 }
+.mainfade{
+    animation: fadeIn linear 2s;
+
+}
+.dessertfade{
+    animation: fadeIn linear 3s;
+
+}
+//////
+
+
+/*BODY*/
+.restaurant-body{
+    margin: 0px;
+    @media (min-width:767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
 /*HEADER*/
 
 .restaurant__page-header{
     width: 100%;
-    @include center
+    @include center;
+    
 }
 
 .restaurant__page-header__icon-link{
@@ -53,6 +81,9 @@
     position: relative;
     top: -55px;
     width: 100%;
+    @media (min-width:767px) {
+        width: 70%;
+    }
  }
 
 .restaurant__pages-menutitle{
@@ -91,17 +122,17 @@
         align-items: baseline;
         color:black;
     }
+
 .card__infosection-dishes__name{
 }
+
 .card__infosection-dishes__info{
     text-overflow: ellipsis;
-   
-    
 }
+
 .card__infosection-dishes_icondiv{
     color: white;
     font-size: x-large;
-    width: 20%;
     height: 100%;
     display: flex;
     text-align: center;
@@ -109,17 +140,8 @@
     align-items: center;
     background-color: #99E2D0;
     border-radius: 0 20px 20px 0;
-    opacity: 0;
-   &:hover {
-        transition: all 400ms ease-in-out;
+    &:hover {
         transform: rotate(360deg);
         opacity : 1;
     }
-    
 }
-
-.menu__item--price{
-
-}
-    
-    
