@@ -490,7 +490,7 @@ footer li a {
   background-color: white;
   box-shadow: 0px 2px 5px #a5a5a5;
   border-radius: 20px;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 0px 0px 10px;
   margin: 10px 0px 10px 0px;
 }
 .card__infosection:hover {
@@ -507,16 +507,27 @@ footer li a {
   color: black;
 }
 
+.card__infosection-dishes__info {
+  text-overflow: ellipsis;
+}
+
 .card__infosection-dishes_icondiv {
   color: white;
   font-size: x-large;
+  width: 20%;
   height: 100%;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  border-radius: 0 25px 25px 0;
+  border-radius: 0 20px 20px 0;
+  opacity: 0;
+}
+.card__infosection-dishes_icondiv:hover {
+  transition: all 400ms ease-in-out;
+  transform: rotate(360deg);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
