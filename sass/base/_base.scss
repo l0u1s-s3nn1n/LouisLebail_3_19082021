@@ -10,6 +10,16 @@ body, html{
     font-family: 'Roboto', sans-serif; 
 }
 
+main {
+    @media (min-width:1024px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
 ul{
     margin: 0px;
     padding: 0px;

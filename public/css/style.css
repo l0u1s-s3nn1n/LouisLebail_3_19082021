@@ -6,6 +6,16 @@ body, html {
   font-family: "Roboto", sans-serif;
 }
 
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+
 ul {
   margin: 0px;
   padding: 0px;
@@ -130,6 +140,15 @@ header img {
   padding: 20px;
   background-color: #F6F6F6;
 }
+@media (min-width: 1024px) {
+  .restaurantsbloc {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
 
 .restaurantsbloc__title {
   width: 100%;
@@ -147,6 +166,12 @@ header img {
 .restaurantscard:hover {
   transform: scale(1.05);
   filter: brightness(110%);
+}
+@media (min-width: 1024px) {
+  .restaurantscard {
+    width: 40%;
+    margin: 20px;
+  }
 }
 
 .card__image {
@@ -338,9 +363,21 @@ footer li a {
   box-shadow: 5px 10px 10px #a5a5a5;
 }
 
-/*@keyframes spin {
+/* @keyframes spin {
     0% { transform: rotate(0deg);}
     100% { transform: rotate(360deg);}
+}
+
+@keyframes loader {
+    0% { 
+        opacity: 1;
+        height: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0%;
+    }
 }
 
 .loaderbloc {
@@ -353,6 +390,7 @@ footer li a {
     align-items: center;
     width: 100%;
     height: 100%;
+    min-height: 220vh;
     background-color: black;
 
 }
@@ -365,7 +403,8 @@ footer li a {
     background-color: $clr-tertiary;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-}*/
+} 
+*/
 .card_infobloc--heartbloc {
   position: absolute;
   right: 20px;
@@ -465,6 +504,11 @@ footer li a {
   padding: 0px;
   margin: 0;
 }
+@media (min-width: 1024px) {
+  .restaurant__page-header__icon {
+    font-size: 2.5rem;
+  }
+}
 
 .header__restaurantpage-logo {
   padding: 20px;
@@ -492,11 +536,10 @@ footer li a {
   flex-direction: column;
   position: relative;
   top: -55px;
-  width: 100%;
 }
 @media (min-width: 767px) {
   .restaurant__pages-sectionbloc {
-    width: 70%;
+    margin: 0px 50px 0px 50px;
   }
 }
 
@@ -510,6 +553,9 @@ footer li a {
 
 /*STARTER*/
 .restaurant__pages-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
 }
 
@@ -518,18 +564,27 @@ footer li a {
 }
 
 .card__infosection {
-  text-align: inherit;
   align-items: flex-end;
+  width: 330px;
   height: 75px;
   background-color: white;
   box-shadow: 0px 2px 5px #a5a5a5;
   border-radius: 20px;
   padding: 0px 0px 0px 10px;
   margin: 10px 0px 10px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .card__infosection:hover {
   filter: brightness(110%);
   box-shadow: 5px 10px 10px #a5a5a5;
+}
+@media (min-width: 767px) {
+  .card__infosection {
+    font-size: large;
+    width: 600px;
+    height: 100px;
+  }
 }
 
 .card__infosection-linkbloc {
@@ -537,18 +592,51 @@ footer li a {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   color: black;
 }
 
+.cardtxt {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__infosection-dishes__name {
+  padding: 0px;
+  margin: 5px 0px 5px 0px;
+}
+
 .card__infosection-dishes__info {
+  padding: 0px;
+  overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.card__infosection-dishes__price {
+  margin-right: 15px;
 }
 
 .card__infosection-dishes_icondiv {
   color: white;
+  background-color: white;
   font-size: x-large;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  opacity: 0;
+}
+.card__infosection-dishes_icondiv:hover {
+  transition: all 400ms ease-in-out;
+  opacity: 1;
+  width: 70px;
   height: 100%;
+  color: white;
+  background-color: #99E2D0;
+  font-size: x-large;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -556,9 +644,18 @@ footer li a {
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
 }
-.card__infosection-dishes_icondiv:hover {
+
+.card__infosection-dishes_checkicon {
+  font-size: x-large;
+}
+.card__infosection-dishes_checkicon:hover {
+  transition: all 700ms ease-in-out;
   transform: rotate(360deg);
-  opacity: 1;
+}
+
+.fa-check-circle:hover {
+  transition: all 700ms ease-in-out;
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */

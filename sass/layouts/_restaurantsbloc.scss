@@ -8,6 +8,13 @@
 .restaurantsbloc{
     padding: 20px;
     background-color: $clr-explorer-background;
+    @media (min-width:1024px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: baseline;
+    }
 }
 
 .restaurantsbloc__title{
@@ -25,6 +32,10 @@
     &:hover {
         transform: scale(1.05);
         filter: brightness(110%);
+    }
+    @media (min-width:1024px) {
+       width: 40%;
+    margin: 20px;
     }
 }
 
