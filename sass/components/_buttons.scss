@@ -28,9 +28,11 @@
     cursor: pointer;
     @include brightbutton;
     @media (min-width: 767px){
+        font-size: x-large;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
+ 
 
     .functioning__button--number{
         width: 25px;
