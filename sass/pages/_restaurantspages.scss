@@ -136,7 +136,28 @@
         justify-content: space-between;
         align-items: center;
         color:black;
-        
+        &:hover  
+        .card__infosection-dishes_icondiv{
+            transition: all 400ms ease-in-out;
+            opacity: 1;
+            width: 70px;
+            height: 100%;
+            color: white;
+            background-color: #99E2D0;
+            font-size: x-large;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: #99E2D0;
+            border-radius: 0 20px 20px 0;
+        }
+        &:hover
+        .card__infosection-dishes_checkicon {
+            font-size: x-large;
+            transition: all 700ms ease-in-out;
+            transform: rotate(360deg);
+        }
     }
 
 .cardtxt {
@@ -171,21 +192,7 @@
     align-items: center;
     border-radius: 0 20px 20px 0;
     opacity: 0;
-    &:hover {
-        transition: all 400ms ease-in-out;
-        opacity: 1;
-        width: 70px;
-        height: 100%;
-        color: white;
-        background-color: #99E2D0;
-        font-size: x-large;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        background-color: #99E2D0;
-        border-radius: 0 20px 20px 0;
-    }
+    
     
     
 }
