@@ -512,15 +512,15 @@ footer li a {
   }
 }
 .starterfade {
-  animation: fadeIn linear 1s;
+  animation: fadeIn linear 1.5s;
 }
 
 .mainfade {
-  animation: fadeIn linear 2s;
+  animation: fadeIn linear 3s;
 }
 
 .dessertfade {
-  animation: fadeIn linear 3s;
+  animation: fadeIn linear 4s;
 }
 
 /*BODY*/
