@@ -423,7 +423,7 @@ footer li a {
   }
   100% {
     opacity: 0;
-    height: 0%;
+    height: 0px;
   }
 }
 .loaderbloc {
@@ -607,12 +607,26 @@ footer li a {
 .restaurant__pages-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 20px;
 }
 
 .card__title {
   text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
+  flex-direction: column;
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 1px;
+  display: flex;
+}
+
+.card__title-border {
+  margin-top: 5px;
+  border: solid;
+  border-width: 2px;
+  width: 12%;
+  color: #99E2D0;
 }
 
 .card__infosection {
@@ -714,15 +728,6 @@ footer li a {
 .fa-check-circle:hover {
   transition: all 700ms ease-in-out;
   transform: rotate(360deg);
-}
-
-.menu__footer {
-  width: 100%;
-  font-size: large;
-}
-
-.footer__title {
-  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

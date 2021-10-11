@@ -99,15 +99,30 @@
 .restaurant__pages-card{
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     padding: 20px;
   
 }
 
 .card__title{
         text-transform: uppercase;
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        text-transform: uppercase;
+        margin: 0px;
+        padding: 1px;
+        display: flex;
     }
+.card__title-border{
+    margin-top: 5px;
+    border: solid;
+    border-width: 2px;
+    width: 12%;
+    color: #99E2D0;
 
+    
+}
 .card__infosection{
     align-items: flex-end;
     width: 330px;
@@ -212,11 +227,3 @@
     
 }
 
-.menu__footer{
-    width: 100%;
-    font-size: large;
-}
-
-.footer__title {
-    padding: 20px;
-   }
