@@ -6,7 +6,6 @@
   }
 
 
-
 .starterfade {
     animation: fadeIn linear 1.5s;
 
@@ -18,7 +17,7 @@
 .dessertfade{
     animation: fadeIn linear 4s;
 }
-//////
+
 
 
 /*BODY*/
@@ -30,8 +29,8 @@
         align-items: center;
     }
   }
-/*HEADER*/
 
+/*HEADER*/
 .restaurant__page-header{
     width: 100%;
     @include center;
@@ -73,7 +72,6 @@
 }
 
 /*MENUBLOC*/
-
 .restaurant__pages-sectionbloc{   
     background-color:$clr-primary-background;
     color: black;
@@ -95,15 +93,18 @@
     justify-content: space-around;
 }
 
-/*STARTER*/
+/*CARD*/
 .restaurant__pages-card{
     display: flex;
     flex-direction: column;
-
     padding: 20px;
+    @media (min-width:767px) {
+       align-items: center;
+    }
   
 }
 
+/*TITLE*/
 .card__title{
         text-transform: uppercase;
         margin: 0px;
@@ -114,15 +115,19 @@
         padding: 1px;
         display: flex;
     }
+
+/*TITLE BORDER*/
 .card__title-border{
     margin-top: 5px;
     border: solid;
     border-width: 2px;
     width: 12%;
-    color: #99E2D0;
-
-    
+    color: #99E2D0; 
+    @media (min-width:767px) {
+        width: 7%;
+     }   
 }
+
 .card__infosection{
     align-items: flex-end;
     width: 330px;
@@ -134,8 +139,7 @@
     margin: 10px 0px 10px 0px;
     overflow:hidden;
     text-overflow: ellipsis;
-   
-    @include brightbutton;
+    @include brightbutton; /*ANIMATION BRIGHT BUTTON*/
     @media (min-width:767px) {
         font-size: large;
         width: 600px;
@@ -150,6 +154,7 @@
         justify-content: space-between;
         align-items: center;
         color:black;
+        /*ANIMATION CHECKICON WHEN CARD HOVER*/
         &:hover  
         .card__infosection-dishes_icondiv{
             transition: all 400ms ease-in-out;
@@ -196,6 +201,8 @@
 .card__infosection-dishes__price{
     margin-right: 15px;
 }
+
+/*CHECK ICON*/
 .card__infosection-dishes_icondiv{
     color: white;
     background-color: white;
@@ -206,11 +213,9 @@
     align-items: center;
     border-radius: 0 20px 20px 0;
     opacity: 0;
-    
-    
-    
 }
 
+/*TEST HOVERCHECKICON
 .card__infosection-dishes_checkicon {
     font-size: x-large;
     &:hover{
@@ -226,4 +231,4 @@
     }
     
 }
-
+*/

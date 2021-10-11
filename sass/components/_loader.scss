@@ -1,6 +1,7 @@
 
  
-/*
+/* TEST LOADER
+
 .loaderbloc {
     position: absolute;
     opacity: 100%;
@@ -48,12 +49,22 @@
     100% {
         opacity: 1;
     }
+
+    .app {
+    opacity: 0;
+    animation-delay: 4s;
+    animation-name: loaderOut;
+    animation-fill-mode: forwards;
+}
 }*/
+
+/*SPINNING CIRCLE*/
 @keyframes spin {
     0% { transform: rotate(0deg);}
     100% { transform: rotate(360deg);}
 }
 
+/*LOADER DELAY*/
 @keyframes loader {
     0% {
         opacity: 1;
@@ -89,9 +100,4 @@
     animation-duration: 1s;
 }
 
-.app {
-    opacity: 0;
-    animation-delay: 4s;
-    animation-name: loaderOut;
-    animation-fill-mode: forwards;
-}
+

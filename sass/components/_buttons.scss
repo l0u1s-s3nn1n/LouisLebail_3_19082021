@@ -33,7 +33,7 @@
         justify-content: flex-start;
     }
  
-
+/*BUTTON'S NUMBER*/
     .functioning__button--number{
         width: 25px;
         height: 25px;
@@ -47,7 +47,7 @@
 
     .functioning__element--icon {
         color: $clr-icon;
-        @include icon_property;
+        @include icon_property; 
     }
     .functioning__element--iconpurple {
        color: $clr-icon--special;
@@ -66,8 +66,8 @@
     width: 300px;
     height: 100px;
     border-radius: 25px;
-    @include explorer-background-gradient;
+    @include explorer-background-gradient; 
     padding: 15px 50px 15px 50px;
-    @include brightbutton;
+    @include brightbutton; /*ANIMATION BRIGHT BUTTON*/
 }
 }

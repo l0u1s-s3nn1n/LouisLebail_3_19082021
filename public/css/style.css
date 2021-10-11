@@ -45,9 +45,8 @@ img {
 /*EXLORER BUTTON GRADIENT*/
 /*FUNCTIONNING BUTTTON*/
 /*FUNCTIONNING ICON PROPERTY */
-/*RESTAURANTS CARDS*/
+/*CARD RADIUS*/
 /*BRIGHT BUTTON*/
-/*HOME*/
 /*HEADER*/
 header .header__logo {
   padding-block: 50px;
@@ -67,6 +66,33 @@ header img {
   }
 }
 
+/*LOCATION*/
+.formexplorer {
+  color: black;
+  display: flex;
+  padding: 15px 0px 15px 0px;
+}
+
+.formexplorer_input {
+  width: 100%;
+  text-align: center;
+  background-color: #EAEAEA;
+  border: 0px;
+  width: 100%;
+  font-weight: 600;
+  color: black;
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: black;
+}
+
+.search {
+  color: black;
+}
+
+/*EXPLORER*/
 .explorerbloc {
   background-color: #F6F6F6;
   display: flex;
@@ -98,31 +124,6 @@ header img {
   padding: 20px;
   align-items: center;
   text-align: center;
-}
-
-.formexplorer {
-  color: black;
-  display: flex;
-  padding: 15px 0px 15px 0px;
-}
-
-.formexplorer_input {
-  width: 100%;
-  text-align: center;
-  background-color: #EAEAEA;
-  border: 0px;
-  width: 100%;
-  font-weight: 600;
-  color: black;
-  font-size: 1rem;
-}
-
-::placeholder {
-  color: black;
-}
-
-.search {
-  color: black;
 }
 
 .functioningbloc {
@@ -272,7 +273,7 @@ footer li a {
 /*EXLORER BUTTON GRADIENT*/
 /*FUNCTIONNING BUTTTON*/
 /*FUNCTIONNING ICON PROPERTY */
-/*RESTAURANTS CARDS*/
+/*CARD RADIUS*/
 /*BRIGHT BUTTON*/
 /*BUTTONS*/
 /*BUTTONS EXPLORER*/
@@ -306,6 +307,7 @@ footer li a {
   padding: 15px;
   justify-content: flex-start;
   cursor: pointer;
+  /*BUTTON'S NUMBER*/
 }
 .functioning__button:hover {
   filter: brightness(110%);
@@ -358,13 +360,15 @@ footer li a {
   border-radius: 25px;
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 15px 50px 15px 50px;
+  /*ANIMATION BRIGHT BUTTON*/
 }
 .order__button .menu__order-button--link:hover {
   filter: brightness(110%);
   box-shadow: 5px 10px 10px #a5a5a5;
 }
 
-/*
+/* TEST LOADER
+
 .loaderbloc {
     position: absolute;
     opacity: 100%;
@@ -407,7 +411,15 @@ footer li a {
     100% {
         opacity: 1;
     }
+
+    .app {
+    opacity: 0;
+    animation-delay: 4s;
+    animation-name: loaderOut;
+    animation-fill-mode: forwards;
+}
 }*/
+/*SPINNING CIRCLE*/
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -416,6 +428,7 @@ footer li a {
     transform: rotate(360deg);
   }
 }
+/*LOADER DELAY*/
 @keyframes loader {
   0% {
     opacity: 1;
@@ -448,13 +461,6 @@ footer li a {
   animation: spin 1s linear infinite;
   animation-fill-mode: forwards;
   animation-duration: 1s;
-}
-
-.app {
-  opacity: 0;
-  animation-delay: 4s;
-  animation-name: loaderOut;
-  animation-fill-mode: forwards;
 }
 
 .card_infobloc--heartbloc {
@@ -603,13 +609,19 @@ footer li a {
   justify-content: space-around;
 }
 
-/*STARTER*/
+/*CARD*/
 .restaurant__pages-card {
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
+@media (min-width: 767px) {
+  .restaurant__pages-card {
+    align-items: center;
+  }
+}
 
+/*TITLE*/
 .card__title {
   text-transform: uppercase;
   margin: 0px;
@@ -621,12 +633,18 @@ footer li a {
   display: flex;
 }
 
+/*TITLE BORDER*/
 .card__title-border {
   margin-top: 5px;
   border: solid;
   border-width: 2px;
   width: 12%;
   color: #99E2D0;
+}
+@media (min-width: 767px) {
+  .card__title-border {
+    width: 7%;
+  }
 }
 
 .card__infosection {
@@ -640,6 +658,7 @@ footer li a {
   margin: 10px 0px 10px 0px;
   overflow: hidden;
   text-overflow: ellipsis;
+  /*ANIMATION BRIGHT BUTTON*/
 }
 .card__infosection:hover {
   filter: brightness(110%);
@@ -660,6 +679,7 @@ footer li a {
   justify-content: space-between;
   align-items: center;
   color: black;
+  /*ANIMATION CHECKICON WHEN CARD HOVER*/
 }
 .card__infosection-linkbloc:hover .card__infosection-dishes_icondiv {
   transition: all 400ms ease-in-out;
@@ -705,6 +725,7 @@ footer li a {
   margin-right: 15px;
 }
 
+/*CHECK ICON*/
 .card__infosection-dishes_icondiv {
   color: white;
   background-color: white;
@@ -717,17 +738,22 @@ footer li a {
   opacity: 0;
 }
 
+/*TEST HOVERCHECKICON
 .card__infosection-dishes_checkicon {
-  font-size: x-large;
-}
-.card__infosection-dishes_checkicon:hover {
-  transition: all 700ms ease-in-out;
-  transform: rotate(360deg);
+    font-size: x-large;
+    &:hover{
+        transition: all 700ms ease-in-out;
+        transform: rotate(360deg);
+    }
 }
 
-.fa-check-circle:hover {
-  transition: all 700ms ease-in-out;
-  transform: rotate(360deg);
+.fa-check-circle{
+    &:hover{
+        transition: all 700ms ease-in-out;
+        transform: rotate(360deg);
+    }
+
 }
+*/
 
 /*# sourceMappingURL=style.css.map */

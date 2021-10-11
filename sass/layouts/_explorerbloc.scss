@@ -1,3 +1,30 @@
+/*LOCATION*/
+.formexplorer{
+    color: black;
+    display: flex;
+    padding: 15px 0px 15px 0px;
+}
+
+.formexplorer_input{
+    width: 100%;
+    text-align: center;
+    background-color: $clr-location-background;
+    border: 0px;
+    width: 100%;
+    font-weight: 600;
+    color: black;
+    font-size: 1rem;
+}
+
+::placeholder {
+    color: black;
+}
+
+.search {
+    color: black;
+}
+
+/*EXPLORER*/
 .explorerbloc {
     background-color: $clr-explorer-background;
     display: flex;
@@ -31,27 +58,3 @@
 }
 
 
-.formexplorer{
-    color: black;
-    display: flex;
-    padding: 15px 0px 15px 0px;
-}
-
-.formexplorer_input{
-    width: 100%;
-    text-align: center;
-    background-color: $clr-location-background;
-    border: 0px;
-    width: 100%;
-    font-weight: 600;
-    color: black;
-    font-size: 1rem;
-}
-
-::placeholder {
-    color: black;
-}
-
-.search {
-    color: black;
-}
