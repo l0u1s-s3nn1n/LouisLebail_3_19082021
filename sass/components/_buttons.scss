@@ -27,10 +27,16 @@
     justify-content: flex-start;
     cursor: pointer;
     @include brightbutton;
-    @media (min-width: 767px){
-        font-size: x-large;
-        display: flex;
-        justify-content: flex-start;
+    @media (min-width: 500px){
+        width: 400px;
+    font-size: x-large;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    
     }
  
 /*BUTTON'S NUMBER*/

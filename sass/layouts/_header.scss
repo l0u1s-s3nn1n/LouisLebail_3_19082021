@@ -1,6 +1,7 @@
 /*HEADER*/
 header{
     
+
     .header__logo{
       padding-block: 50px;
       @media screen and (max-width: $size-mobile){
@@ -15,4 +16,9 @@ header{
             height: 30px;
         }
     }
+  }
+
+  .header_home {
+      position: relative;
+    box-shadow: 0px 2px 3px 1px $clr-box-shadow;
   }

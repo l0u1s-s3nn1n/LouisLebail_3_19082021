@@ -1,5 +1,11 @@
 .functioningbloc{
     padding: 20px;
+    @media (min-width: 500px){
+        padding: 20px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
