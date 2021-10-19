@@ -160,8 +160,7 @@
         /*ANIMATION CHECKICON WHEN CARD HOVER*/
         &:hover  
         .card__infosection-dishes_icondiv{
-            transition: all 400ms ease-out;
-            transition-delay: 0.5s;
+            transition: all 1000ms ease-out;
             opacity: 1;
             width: 70px;
             height: 100%;
@@ -213,6 +212,7 @@
 
 /*CHECK ICON*/
 .card__infosection-dishes_icondiv{
+    width: 0px;
     color: white;
     background-color: white;
     font-size: x-large;
